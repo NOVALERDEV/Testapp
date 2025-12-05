@@ -6,9 +6,9 @@ pipeline {
             steps {
                 script {
                     // Construire l'image Docker
-                    bat 'docker build -t python-app .'
+                    //bat 'docker build -t python-app .'
                     // Si tu es sous Linux / macOS, remplace bat par sh :
-                    // sh 'docker build -t python-app .'
+                     sh 'docker build -t python-app .'
                 }
             }
         }
@@ -17,8 +17,8 @@ pipeline {
             steps {
                 script {
                     // Lancer un conteneur à partir de l'image
-                    bat 'docker run --rm python-app'
-                    // sh 'docker run --rm python-app' sur Linux / macOS
+                    //bat 'docker run --rm python-app'
+                     sh 'docker run --rm python-app' //sur Linux / macOS
                 }
             }
         }
