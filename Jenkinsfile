@@ -2,7 +2,7 @@ pipeline {
     //agent any
     agent {
         docker {
-            image 'docker:latest'  # Utilise une image avec Docker installé
+            image 'docker:latest'
             args '-v /var/run/docker.sock:/var/run/docker.sock'
         }
     }
