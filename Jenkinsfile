@@ -10,7 +10,6 @@ pipeline {
                     //bat 'docker run --rm python-app'
                      sh 'docker run --rm python-app' //sur Linux / macOS
                 }
-            }
         }
     }
 }
